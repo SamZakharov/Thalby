@@ -60,14 +60,13 @@ header ul {
     width: 492px;
     height: 25px;
     margin: 15px 0 15px;
-    display: flex;
     justify-content: flex-end;
     align-items: center;
 }
 
-.head-icons ul li {
-    padding-top: 10px;
-}
+
+
+
 
 
 
