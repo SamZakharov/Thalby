@@ -7,31 +7,33 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Thalby</title>
     <link rel="icon" type="image/x-icon" href="images/thalby-logo.png">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/mobile-menu.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+
 
 </head>
 <body>
 <header>
-    <div class="head-wrapper pos-relative">
-        <nav>
-            <ul class="d-flex">
-                <li>
-                    <a href="#">Shop</a>
-                </li>
-                <li>
-                    <a href="#">Collections</a>
-                </li>
-                <li>
-                    <a href="#">Try a Free Guide</a>
-                </li>
-                <li>
-                    <a href="#">Stories</a>
-                </li>
-            </ul>
+    <div class="head-wrapper pos-relative d-flex">
+
+        <div class="menu-btn">
+            <div class="line line--1"></div>
+            <div class="line line--2"></div>
+            <div class="line line--3"></div>
+        </div>
+
+
+        <nav class="nav-links">
+            <a href="#" class="link">Shop</a>
+            <a href="#" class="link">Collections</a>
+            <a href="#" class="link">Try a Free Guide</a>
+            <a href="#" class="link">Stories</a>
         </nav>
+
 
         <a href="#" class="head-logo pos-absolute">
             <img src="images/thalby-logo.png" alt="image">
@@ -61,5 +63,24 @@
 
     </div>
 </header>
+<main>
+    <section class="main-wrapper ">
+        <div class="main-wrapper-title">
+            <div class="subtitle">
+                <h1>
+                    Fall deeper in love <br> with <br> humanity.
+                </h1>
+
+                <h4>
+                    Get to know the world through our concise, <br> informative and inspiring guides.
+                </h4>
+                <input class="subtitle-btn" type="button" value="Shop Now">
+
+            </div>
+            <img src="images/main-wrapp-card.png" alt="image" class="main-wrapp-card">
+        </div>
+    </section>
+</main>
+<script src="js/scripts.js"></script>
 </body>
 </html>

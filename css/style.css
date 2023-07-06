@@ -16,8 +16,7 @@
 }
 
 header {
-    display: flex;
-    justify-content: center;
+    padding-bottom: 9px;
 }
 
 header ul {
@@ -26,44 +25,100 @@ header ul {
 
 .head-wrapper {
     max-width: 1064px;
-    display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: auto;
 }
 
 .head-wrapper nav {
-    width: 423px;
     display: flex;
     align-items: center;
+    margin-top: 15px;
 }
 
-.head-wrapper nav li a {
+.head-wrapper nav a {
     color: #1C1B1B;
     font: 700 16px 'Roboto', sans-serif;
     font-style: normal;
     line-height: 26px;
     text-decoration: none;
-    margin-top: 15px;
     margin-bottom: 14px;
 }
 
-.head-wrapper nav li:not(:first-child) {
+.head-wrapper nav a:not(:first-child) {
     margin-left: 28px;
 }
 
 .head-logo {
     left: 50%;
     top: 16px;
+    margin-left: -40px;
+    margin-top: 10px;
 }
 
 .head-icons {
-    width: 492px;
-    height: 25px;
-    margin: 15px 0 15px;
     justify-content: flex-end;
     align-items: center;
 }
 
+.head-icons:last-child li {
+    margin-top: 18px;
+    margin-right: 15px;
+}
+
+.head-icons:first-child li {
+    margin-top: 7px;
+    margin-left: 7px;
+}
+
+.main-wrapper {
+    background-color: #F0EFEB;
+    width: 1440px;
+    margin: auto;
+}
+
+.main-wrapper-title {
+    display: flex;
+    justify-content: center;
+}
+
+.subtitle h1 {
+    color: #000;
+    font: 700 60px 'Roboto', sans-serif;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 42px;
+}
+
+.subtitle h4 {
+    color: #000;
+    font: 400 24px 'Roboto', sans-serif;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 26px;
+}
+
+.subtitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subtitle-btn {
+    width: 129px;
+    height: 36px;
+    border-radius: 100px;
+    border: 1px solid #000;
+    background: #000;
+    color: #FFF;
+    font: 400 17px 'Roboto', sans-serif;
+    font-style: normal;
+    line-height: normal;
+}
+
+.main-wrapp-card {
+    margin-left: 73px;
+}
 
 
 
