@@ -25,20 +25,21 @@
 }
 
 header {
-    padding: 15px 0;
+    background-color: #F0EFEB;
+    padding: 8px 0;
 }
 
-head .container {
+header .container {
     justify-content: space-between;
     align-items: center;
 }
 
-.nav-links {
+.nav-links ul {
     display: flex;
     align-items: center;
 }
 
-.head-wrapper nav a {
+.nav-links ul a {
     color: #1C1B1B;
     font: 700 16px 'Roboto', sans-serif;
     font-style: normal;
@@ -47,7 +48,7 @@ head .container {
     margin-bottom: 14px;
 }
 
-.head-wrapper nav a:not(:first-child) {
+.nav-links ul li:not(:first-child) {
     margin-left: 28px;
 }
 
@@ -77,41 +78,38 @@ head .container {
     display: flex;
 }
 
-.main-wrapper-title {
+.main-container-title {
     display: flex;
     justify-content: space-between;
-
 }
 
-.subtitle h1, h4, .subtitle-btn {
+.main-container-title h1, h4, .subtitle-btn {
     margin-left: 24px;
 }
 
-.subtitle h1 {
+.title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title h1 {
     color: #000;
     font: 700 60px 'Roboto', sans-serif;
     font-style: normal;
     line-height: normal;
-    margin-bottom: 42px;
-    flex-shrink: 0;
+    padding-bottom: 42px;
 }
 
-.subtitle h4 {
+.title h4 {
     color: #000;
     font: 400 24px 'Roboto', sans-serif;
     font-style: normal;
     line-height: normal;
-    margin-bottom: 26px;
-    flex-shrink: 0;
+    padding-bottom: 26px;
 }
 
-.subtitle {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.subtitle-btn {
+.title-btn {
     width: 129px;
     height: 36px;
     border-radius: 100px;
@@ -121,11 +119,12 @@ head .container {
     font: 400 17px 'Roboto', sans-serif;
     font-style: normal;
     line-height: normal;
+    margin-left: 24px;
 }
 
 .main-wrapp-card {
-    margin-left: 59px;
-    flex-shrink: 0;
+    margin-left: 120px;
+    justify-content: flex-end;
 }
 
 .our-explain-wrapper {
@@ -179,8 +178,8 @@ head .container {
     padding-bottom: 52px;
 }
 
-.cards{
-    padding-left: 60px;
+.cards {
+    /*padding-left: 60px;*/
     padding-bottom: 51px;
 }
 
@@ -240,24 +239,24 @@ head .container {
     text-decoration-line: underline;
 }
 
-.people-and-society {
+.people-and-society-wrapper {
     background: rgba(204, 204, 204, 0.30);
     padding: 76px 0 51px;
 }
 
-.people-and-society div {
+.people-and-society-wrapper div {
     justify-content: flex-start;
     align-items: center;
 }
 
-.people-and-society article {
+.people-and-society-wrapper article {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     margin-left: 50px;
 }
 
-.people-and-society article h2 {
+.people-and-society-wrapper article h2 {
     color: #000;
     font: 700 36px 'Roboto', sans-serif;
     font-style: normal;
@@ -265,7 +264,7 @@ head .container {
     padding-bottom: 31px;
 }
 
-.people-and-society article p {
+.people-and-society-wrapper article p {
     color: #000;
     font: 400 36px 'Roboto', sans-serif;
     font-style: normal;
@@ -273,7 +272,7 @@ head .container {
     padding-bottom: 40px;
 }
 
-.people-and-society article a {
+.people-and-society-wrapper article a {
     color: #000;
     font: 700 17px 'Roboto', sans-serif;
     font-style: normal;
@@ -283,30 +282,30 @@ head .container {
 
 /*                                           */
 
-.culture-and-heritage {
+.culture-and-heritage-wrapper {
     background: rgba(204, 204, 204, 0.60);
     padding: 76px 0 51px;
 }
 
-.culture-and-heritage div {
+.culture-and-heritage-wrapper div {
     flex-direction: row-reverse;
     /*justify-content: flex-end;*/
     align-items: center;
 }
 
-.culture-and-heritage div img{
+.culture-and-heritage-wrapper div img {
     margin-left: 50px;
 
 }
 
-.culture-and-heritage article {
+.culture-and-heritage-wrapper article {
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
 
 }
 
-.culture-and-heritage article h2 {
+.culture-and-heritage-wrapper article h2 {
     color: #000;
     text-align: right;
     font: 700 36px 'Roboto', sans-serif;
@@ -315,7 +314,7 @@ head .container {
     padding-bottom: 31px;
 }
 
-.culture-and-heritage article p {
+.culture-and-heritage-wrapper article p {
     color: #000;
     text-align: right;
     font: 400 36px 'Roboto', sans-serif;
@@ -324,7 +323,7 @@ head .container {
     padding-bottom: 31px;
 }
 
-.culture-and-heritage article a {
+.culture-and-heritage-wrapper article a {
     color: #000;
     text-align: right;
     font: 700 17px 'Roboto', sans-serif;
@@ -335,25 +334,25 @@ head .container {
 
 /*                                                   */
 
-.power-and-polics {
+.power-and-polics-wrapper {
     background: rgba(204, 204, 204, 0.30);
     padding: 76px 0 51px;
     margin-bottom: 190px;
 }
 
-.power-and-polics div {
+.power-and-polics-wrapper div {
     justify-content: flex-start;
     align-items: center;
 }
 
-.power-and-polics article {
+.power-and-polics-wrapper article {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
     margin-left: 50px;
 }
 
-.power-and-polics article h2 {
+.power-and-polics-wrapper article h2 {
     color: #000;
     font: 700 36px 'Roboto', sans-serif;
     font-style: normal;
@@ -361,7 +360,7 @@ head .container {
     padding-bottom: 31px;
 }
 
-.power-and-polics article p {
+.power-and-polics-wrapper article p {
     color: #000;
     text-align: left;
     font: 400 36px 'Roboto', sans-serif;
@@ -370,7 +369,7 @@ head .container {
     padding-bottom: 39px;
 }
 
-.power-and-polics article a {
+.power-and-polics-wrapper article a {
     color: #000;
     text-align: left;
     font: 700 17px 'Roboto', sans-serif;
@@ -379,13 +378,13 @@ head .container {
     text-decoration-line: underline;
 }
 
-.thalby-guides-container{
+.thalby-guides-container {
     flex-direction: column;
     align-items: center;
     padding-bottom: 110px;
 }
 
-.thalby-guides-container h3{
+.thalby-guides-container h3 {
     color: #000;
     text-align: center;
     font: 400 36px 'Roboto', sans-serif;
@@ -395,7 +394,7 @@ head .container {
     padding-bottom: 70px;
 }
 
-.circles-container{
+.circles-container {
     display: grid;
     justify-items: center;
     align-items: start;
@@ -407,7 +406,7 @@ head .container {
     grid-row-gap: 110px;
 }
 
-.circles-container-flex{
+.circles-container-flex {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -415,7 +414,7 @@ head .container {
     max-height: 168px;
 }
 
-.circles-container p{
+.circles-container p {
 
     padding-top: 25px;
     color: #000;
@@ -426,32 +425,238 @@ head .container {
     line-height: normal;
 }
 
-.circles{
+.circles {
     width: 70px;
     height: 70px;
     border-radius: 50%;
 }
-.circle-frozen-state{
+
+.circle-frozen-state {
     background-color: #21F7EC;
 }
 
-.circle-bianchi-green{
-background-color: #33D3BC;
+.circle-bianchi-green {
+    background-color: #33D3BC;
 
 }
 
-.circle-cyan-blue{
+.circle-cyan-blue {
     background-color: #18A5C6;
 }
 
-.circle-whiskey{
+.circle-whiskey {
     background-color: #D38F62;
 }
 
-.circle-tart-orange{
+.circle-tart-orange {
     background-color: #F94C43;
 }
 
-.circle-plasma-trail{
+.circle-plasma-trail {
     background-color: #D399FF;
+}
+
+.thalby-interviews-wrapper {
+    background: linear-gradient(to top, #F0F0F0 57%, white 43%);
+    padding-bottom: 52px;
+}
+
+
+.thalby-interviews-container h2 {
+    color: #000;
+    text-align: center;
+    font: 700 36px 'Roboto', sans-serif;
+    font-style: normal;
+    line-height: normal;
+    padding-bottom: 102px;
+}
+
+.thalby-interviews-people {
+    justify-content: center;
+    align-items: center;
+
+}
+
+.thalby-interviews-people div {
+    text-align: center;
+}
+
+.thalby-interviews-people div:nth-child(2) {
+    margin: 0 100px;
+}
+
+.thalby-interviews-people div img {
+    padding-bottom: 35px;
+}
+
+.thalby-interviews-people div p:nth-child(2) {
+    color: #000;
+    text-align: center;
+    font: 700 24px 'Roboto', sans-serif;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.6px;
+}
+
+.thalby-interviews-people div p {
+    color: #000;
+    text-align: center;
+    font: 400 19px 'Roboto', sans-serif;
+    font-style: normal;
+    line-height: normal;
+    padding-bottom: 44px;
+}
+
+.thalby-interviews-people div a {
+    color: #000;
+    text-align: center;
+    font: 700 18px 'Roboto', sans-serif;
+    font-style: normal;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.keep-in-touch-wrapper {
+    padding-top: 79px;
+    padding-bottom: 88px;
+}
+
+.keep-in-touch-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.keep-in-touch-container div h2 {
+    color: #000;
+    text-align: center;
+    font: 700 36px 'Roboto', sans-serif;
+    font-style: normal;
+    line-height: normal;
+    padding-bottom: 9px;
+}
+
+.keep-in-touch-container div p {
+    color: #000;
+    text-align: center;
+    font: 700 17px 'Roboto', sans-serif;
+    font-style: normal;
+    line-height: normal;
+    padding-bottom: 26px;
+}
+
+.subscribe-form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe-form div {
+    padding-bottom: 18px;
+}
+
+.subscribe-form div input {
+    border: 1px solid #000;
+    padding: 12px 0 11px 8px;
+}
+
+.subscribe-form div input:nth-child(4) {
+    margin-left: 33px;
+}
+
+.subscribe-form input::placeholder {
+    color: #A0A0A0;
+    font: 400 14px 'Roboto', sans-serif;
+    font-style: normal;
+    line-height: normal;
+}
+
+.form-email {
+    padding: 13px 0 10px 8px;
+    margin-bottom: 16px;
+    width: 366px;
+}
+
+.subscribe-btn {
+    width: 115px;
+    height: 33px;
+    border-radius: 20px;
+    background-color: #000000;
+    color: #FFF;
+    text-align: center;
+    font: 400 14px 'Roboto', sans-serif;
+    font-style: normal;
+    line-height: normal;
+    padding: 7px 23px 10px;
+}
+
+footer {
+    background-color: #000000;
+    padding: 51px 80px 16px;
+}
+
+.footer-wrapper {
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.footer-icon-social {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.thalby-footer-logo {
+    padding-left: 25px;
+    padding-bottom: 37px;
+}
+
+.footer-social-media {
+    padding-left: 25px;
+}
+
+.footer-social-media a {
+    text-decoration: none;
+}
+
+.footer-social-media a:nth-child(2) {
+    margin: 0 20px;
+}
+
+.footer-links li {
+    padding-bottom: 12px;
+}
+
+.footer-links a {
+    color: #FFF;
+    font: 400 14px 'Roboto', sans-serif;
+    font-style: normal;
+    line-height: 21px;
+    text-decoration: none;
+}
+
+.footer-links p {
+    color: #FFF;
+    font: 400 14px 'Roboto', sans-serif;
+    font-style: normal;
+    line-height: 23.1px;
+    padding-bottom: 36px;
+}
+
+.footer-links-contact {
+    margin-left: 72px;
+}
+
+.licence {
+    justify-content: center;
+    align-items: center;
+}
+
+.licence a {
+    color: #FFF;
+    text-align: center;
+    font: 400 14px 'Roboto', sans-serif;
+    font-style: normal;
+    line-height: 23.1px;
+    text-decoration: none;
 }
