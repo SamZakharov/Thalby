@@ -1,0 +1,44 @@
+$graphite-black-color: #1C1B1B;
+$font-size-700: 700;
+$main-font: 'Roboto', sans-serif;
+
+nav {
+  position: relative;
+  transform: translateX(25px);
+
+  .menu-btn {
+    display: none;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    padding: 0;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+
+    a {
+      &:nth-child(2) {
+        margin-left: 28px;
+        margin-right: 28px;
+      }
+
+      &:nth-child(3) {
+        margin-right: 28px;
+      }
+    }
+  }
+  .link {
+    color: $graphite-black-color;
+    font: $font-size-700 16px $main-font;
+    font-style: normal;
+    line-height: 26px;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.9, 0, .33, 1);
+  }
+}
+
+

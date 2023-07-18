@@ -11,4 +11,7 @@ menuBtn.addEventListener('click', () => {
     lineTwo.classList.toggle('line-fade-out');
     lineThree.classList.toggle('line-cross');
     link.classList.toggle('fade-in');
+
 })
+
+
