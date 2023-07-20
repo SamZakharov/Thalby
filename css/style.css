@@ -55,9 +55,6 @@ header {
   display: flex;
   justify-content: space-between; }
 
-.main-container-title h1, h4, .subtitle-btn {
-  margin-left: 24px; }
-
 .title {
   max-width: 544px;
   display: flex;
@@ -76,18 +73,18 @@ header {
     font-style: normal;
     line-height: normal;
     padding-bottom: 26px; }
-
-.title-btn {
-  width: 129px;
-  height: 36px;
-  border-radius: 100px;
-  border: 1px solid #000;
-  background: #000;
-  color: #FFF;
-  font: 400 17px 'Roboto', sans-serif;
-  font-style: normal;
-  line-height: normal;
-  margin-left: 24px; }
+  .title a {
+    width: 83px;
+    padding: 7px 23px 9px;
+    border-radius: 100px;
+    border: 1px solid #000;
+    background: #000;
+    color: #FFF;
+    font: 400 17px 'Roboto', sans-serif;
+    font-style: normal;
+    line-height: normal;
+    text-align: center;
+    text-decoration: none; }
 
 .main-wrapp-card {
   max-width: 599px; }
@@ -147,7 +144,7 @@ header {
       max-width: 100%;
       display: block; }
     .cards article:nth-child(1) a {
-      margin-bottom: 27px; }
+      margin-bottom: 22px; }
     .cards article:nth-child(2) a {
       margin-bottom: 20px; }
     .cards article:nth-child(3) a {
@@ -175,110 +172,152 @@ header {
   font: 700 17px 'Roboto', sans-serif;
   font-style: normal;
   line-height: normal;
-  text-decoration-line: underline; }
+  text-decoration-line: underline;
+  margin-bottom: 0; }
 
 .people-and-society-wrapper {
   background: rgba(204, 204, 204, 0.3);
   padding: 76px 0 51px; }
-  .people-and-society-wrapper div {
+  .people-and-society-wrapper .people-and-society-container {
     align-items: center; }
-  .people-and-society-wrapper article {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin-left: 50px; }
-    .people-and-society-wrapper article h2 {
-      color: #000;
-      font: 700 36px 'Roboto', sans-serif;
-      font-style: normal;
-      line-height: normal;
-      padding-bottom: 31px; }
-    .people-and-society-wrapper article p {
-      color: #000;
-      font: 400 36px 'Roboto', sans-serif;
-      font-style: normal;
-      line-height: normal;
-      padding-bottom: 40px; }
-    .people-and-society-wrapper article a {
-      color: #000;
-      font: 700 17px 'Roboto', sans-serif;
-      font-style: normal;
-      line-height: normal;
-      text-decoration-line: underline; }
-
-.img-card-size {
-  max-width: 385px; }
-  .img-card-size img {
-    width: 100%;
-    display: block; }
+    .people-and-society-wrapper .people-and-society-container article {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      margin-left: 50px; }
+      .people-and-society-wrapper .people-and-society-container article h2 {
+        color: #000;
+        font: 700 36px 'Roboto', sans-serif;
+        font-style: normal;
+        line-height: normal;
+        padding-bottom: 31px; }
+      .people-and-society-wrapper .people-and-society-container article p {
+        max-width: 498px;
+        color: #000;
+        font: 400 36px 'Roboto', sans-serif;
+        font-style: normal;
+        line-height: normal;
+        padding-bottom: 40px; }
+      .people-and-society-wrapper .people-and-society-container article .link-laptop a {
+        color: #000;
+        font: 700 17px 'Roboto', sans-serif;
+        font-style: normal;
+        line-height: normal;
+        text-decoration-line: underline; }
+    .people-and-society-wrapper .people-and-society-container .link-and-image {
+      align-self: center; }
+      .people-and-society-wrapper .people-and-society-container .link-and-image .img-card-size {
+        max-width: 385px; }
+        .people-and-society-wrapper .people-and-society-container .link-and-image .img-card-size img {
+          width: 100%;
+          display: block; }
+      .people-and-society-wrapper .people-and-society-container .link-and-image .link-mobile {
+        display: none; }
+        .people-and-society-wrapper .people-and-society-container .link-and-image .link-mobile a {
+          color: #000;
+          font: 700 17px 'Roboto', sans-serif;
+          font-style: normal;
+          line-height: normal;
+          text-decoration-line: underline; }
 
 .culture-and-heritage-wrapper {
   background: rgba(204, 204, 204, 0.6);
   padding: 76px 0 51px; }
-  .culture-and-heritage-wrapper div {
+  .culture-and-heritage-wrapper .culture-and-heritage-container {
     flex-direction: row-reverse;
     align-items: center; }
-    .culture-and-heritage-wrapper div img {
-      margin-left: 50px; }
-  .culture-and-heritage-wrapper article {
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center; }
-    .culture-and-heritage-wrapper article h2 {
-      color: #000;
-      text-align: right;
-      font: 700 36px 'Roboto', sans-serif;
-      font-style: normal;
-      line-height: normal;
-      padding-bottom: 31px; }
-    .culture-and-heritage-wrapper article p {
-      color: #000;
-      text-align: right;
-      font: 400 36px 'Roboto', sans-serif;
-      font-style: normal;
-      line-height: normal;
-      padding-bottom: 31px; }
-    .culture-and-heritage-wrapper article a {
-      color: #000;
-      text-align: right;
-      font: 700 17px 'Roboto', sans-serif;
-      font-style: normal;
-      line-height: normal;
-      text-decoration-line: underline; }
+    .culture-and-heritage-wrapper .culture-and-heritage-container article {
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center; }
+      .culture-and-heritage-wrapper .culture-and-heritage-container article h2 {
+        color: #000;
+        text-align: right;
+        font: 700 36px 'Roboto', sans-serif;
+        font-style: normal;
+        line-height: normal;
+        padding-bottom: 31px; }
+      .culture-and-heritage-wrapper .culture-and-heritage-container article p {
+        max-width: 513px;
+        color: #000;
+        text-align: right;
+        font: 400 36px 'Roboto', sans-serif;
+        font-style: normal;
+        line-height: normal;
+        padding-bottom: 31px; }
+      .culture-and-heritage-wrapper .culture-and-heritage-container article .link-laptop a {
+        color: #000;
+        text-align: right;
+        font: 700 17px 'Roboto', sans-serif;
+        font-style: normal;
+        line-height: normal;
+        text-decoration-line: underline; }
+    .culture-and-heritage-wrapper .culture-and-heritage-container .link-and-image {
+      align-self: center; }
+      .culture-and-heritage-wrapper .culture-and-heritage-container .link-and-image .img-card-size {
+        margin-left: 50px;
+        max-width: 385px; }
+        .culture-and-heritage-wrapper .culture-and-heritage-container .link-and-image .img-card-size img {
+          width: 100%;
+          display: block; }
+      .culture-and-heritage-wrapper .culture-and-heritage-container .link-and-image .link-mobile {
+        display: none; }
+        .culture-and-heritage-wrapper .culture-and-heritage-container .link-and-image .link-mobile a {
+          color: #000;
+          font: 700 17px 'Roboto', sans-serif;
+          font-style: normal;
+          line-height: normal;
+          text-decoration-line: underline; }
 
-.power-and-polics-wrapper {
+.power-and-politics-wrapper {
   background: rgba(204, 204, 204, 0.3);
-  padding: 76px 0 51px;
-  margin-bottom: 190px; }
-  .power-and-polics-wrapper div {
+  padding: 76px 0 51px; }
+  .power-and-politics-wrapper .power-and-politics-container {
     align-items: center; }
-  .power-and-polics-wrapper article {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin-left: 50px; }
-    .power-and-polics-wrapper article h2 {
-      color: #000;
-      font: 700 36px 'Roboto', sans-serif;
-      font-style: normal;
-      line-height: normal;
-      padding-bottom: 31px; }
-    .power-and-polics-wrapper article p {
-      color: #000;
-      text-align: left;
-      font: 400 36px 'Roboto', sans-serif;
-      font-style: normal;
-      line-height: normal;
-      padding-bottom: 39px; }
-    .power-and-polics-wrapper article a {
-      color: #000;
-      text-align: left;
-      font: 700 17px 'Roboto', sans-serif;
-      font-style: normal;
-      line-height: normal;
-      text-decoration-line: underline; }
+    .power-and-politics-wrapper .power-and-politics-container article {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      margin-left: 50px; }
+      .power-and-politics-wrapper .power-and-politics-container article h2 {
+        color: #000;
+        font: 700 36px 'Roboto', sans-serif;
+        font-style: normal;
+        line-height: normal;
+        padding-bottom: 31px; }
+      .power-and-politics-wrapper .power-and-politics-container article p {
+        max-width: 530px;
+        color: #000;
+        text-align: left;
+        font: 400 36px 'Roboto', sans-serif;
+        font-style: normal;
+        line-height: normal;
+        padding-bottom: 39px; }
+      .power-and-politics-wrapper .power-and-politics-container article .link-laptop a {
+        color: #000;
+        text-align: left;
+        font: 700 17px 'Roboto', sans-serif;
+        font-style: normal;
+        line-height: normal;
+        text-decoration-line: underline; }
+    .power-and-politics-wrapper .power-and-politics-container .link-and-image {
+      align-self: center; }
+      .power-and-politics-wrapper .power-and-politics-container .link-and-image .img-card-size {
+        max-width: 385px; }
+        .power-and-politics-wrapper .power-and-politics-container .link-and-image .img-card-size img {
+          width: 100%;
+          display: block; }
+      .power-and-politics-wrapper .power-and-politics-container .link-and-image .link-mobile {
+        display: none; }
+        .power-and-politics-wrapper .power-and-politics-container .link-and-image .link-mobile a {
+          color: #000;
+          font: 700 17px 'Roboto', sans-serif;
+          font-style: normal;
+          line-height: normal;
+          text-decoration-line: underline; }
 
 .thalby-guides-wrapper {
+  margin-top: 190px;
   padding-bottom: 52px; }
 
 .thalby-guides-container {
@@ -341,34 +380,41 @@ header {
 
 .thalby-interviews-people {
   justify-content: center;
-  align-items: center; }
-  .thalby-interviews-people div {
-    text-align: center; }
-    .thalby-interviews-people div:nth-child(2) {
-      margin: 0 100px; }
-    .thalby-interviews-people div img {
-      padding-bottom: 35px; }
-    .thalby-interviews-people div p {
+  align-items: center;
+  gap: 100px; }
+  .thalby-interviews-people .interview {
+    max-width: 300px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 351px 84px 45px 20px;
+    grid-gap: 40px;
+    text-align: center;
+    align-items: center;
+    justify-items: center; }
+    .thalby-interviews-people .interview img {
+      width: 288px;
+      height: 351px;
+      display: block; }
+  .thalby-interviews-people p {
+    color: #000;
+    text-align: center;
+    font: 400 19px 'Roboto', sans-serif;
+    font-style: normal;
+    line-height: normal; }
+    .thalby-interviews-people p:nth-child(2) {
       color: #000;
       text-align: center;
-      font: 400 19px 'Roboto', sans-serif;
+      font: 700 24px 'Roboto', sans-serif;
       font-style: normal;
       line-height: normal;
-      padding-bottom: 44px; }
-      .thalby-interviews-people div p:nth-child(2) {
-        color: #000;
-        text-align: center;
-        font: 700 24px 'Roboto', sans-serif;
-        font-style: normal;
-        line-height: normal;
-        letter-spacing: 0.6px; }
-    .thalby-interviews-people div a {
-      color: #000;
-      text-align: center;
-      font: 700 18px 'Roboto', sans-serif;
-      font-style: normal;
-      line-height: normal;
-      text-decoration-line: underline; }
+      letter-spacing: 0.6px; }
+  .thalby-interviews-people a {
+    color: #000;
+    text-align: center;
+    font: 700 18px 'Roboto', sans-serif;
+    font-style: normal;
+    line-height: normal;
+    text-decoration-line: underline; }
 
 .keep-in-touch-wrapper {
   padding-top: 79px;

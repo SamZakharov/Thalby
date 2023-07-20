@@ -1,6 +1,5 @@
 nav {
-  position: relative;
-  transform: translateX(25px); }
+  position: relative; }
   nav .menu-btn {
     display: none;
     position: absolute;
