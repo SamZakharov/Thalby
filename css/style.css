@@ -19,7 +19,7 @@
   max-width: 1064px;
   margin: auto; }
 
-.body.active {
+.body-hiden {
   overflow: hidden; }
 
 header {

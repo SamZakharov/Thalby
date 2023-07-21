@@ -16,9 +16,8 @@ menuBtn.addEventListener('click', () => {
 
 
 
-$('.menu-btn').click(function() {
-    $('body').toggleClass('active');
-});
+menuBtn.addEventListener('click', () => {
+    body.classList.toggle('body-hiden');})
 
 
 
