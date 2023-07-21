@@ -15,3 +15,10 @@ menuBtn.addEventListener('click', () => {
 })
 
 
+
+$("menu-btn").click(function () {
+    $(body).toggleClass("hide");
+});
+
+
+

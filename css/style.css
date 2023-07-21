@@ -19,6 +19,9 @@
   max-width: 1064px;
   margin: auto; }
 
+body.hide {
+  overflow: hidden; }
+
 header {
   background-color: #F0EFEB;
   padding: 8px 0; }

@@ -284,7 +284,8 @@
     }
 
     .culture-and-heritage-wrapper .culture-and-heritage-container .link-and-image .img-card-size {
-        padding-bottom: 50px
+        padding-bottom: 50px;
+        margin-left: 0;
     }
 
     .culture-and-heritage-wrapper .culture-and-heritage-container .link-and-image .img-card-size img {
@@ -543,12 +544,16 @@
 
 @media screen and (max-width: 489px) {
 
-    .head-icons li:nth-child(1) {
-        display: none;
+    nav {
+        width: 200px;
     }
 
-    .head-icons:last-of-type li {
-        opacity: 0;
+    nav .menu-btn {
+        right: -160px;
+    }
+
+    .head-icons li:nth-child(1) {
+        display: none;
     }
 
     .subscribe-form div {
@@ -584,6 +589,14 @@
 }
 
 @media screen and (max-width: 401px ) {
+
+    nav {
+        width: 200px;
+    }
+
+    .head-icons:last-of-type li{
+        margin-right: 0;
+    }
 
     .main-container-title {
         padding: 0
@@ -656,6 +669,19 @@
 
     .cards article:nth-child(3) {
         padding-bottom: 0;
+    }
+
+    .circles-container .circle{
+        padding-bottom: 0;
+        width: 140px;
+    }
+
+    .circles-container .circle p {
+        font: 400 20px 'Roboto', sans-serif;
+    }
+
+    .thalby-interviews-container h2{
+        font: 700 22px 'Roboto', sans-serif;
     }
 
 

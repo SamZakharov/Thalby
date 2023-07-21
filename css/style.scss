@@ -42,6 +42,9 @@ $font-size-400: 400;
   margin: auto;
 }
 
+body.hide{
+  overflow: hidden;
+}
 
 header {
   background-color: $timber-wolf-color;
