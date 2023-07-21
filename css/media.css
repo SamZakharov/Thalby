@@ -14,8 +14,6 @@
         transform: translateX(-300px);
         height: 100%;
         width: 400px;
-        transition: all 0.5s;
-        transition-timing-function: ease;
         border-radius: 0 0 100% 50%;
     }
 
@@ -100,7 +98,6 @@
         transform: translateX(-100px);
         opacity: 0;
         margin: 0;
-        transition: all 900ms cubic-bezier(.9, 1, .33, 1);
     }
 
     nav .nav-links.fade-in {
@@ -540,6 +537,10 @@
     .footer-links-contact {
         margin-left: 20px;
     }
+
+    .footer-links-about{
+        margin-left: 30px;
+    }
 }
 
 @media screen and (max-width: 489px) {
@@ -598,6 +599,15 @@
         margin-right: 0;
     }
 
+    .main-wrapp-card{
+        margin: 0;
+        max-width: 300px;
+    }
+
+    .main-wrapp-card img{
+        width: 100%;
+    }
+
     .main-container-title {
         padding: 0
     }
@@ -629,15 +639,6 @@
         width: 80px;
         padding: 3px 11px 5px;
         font: 400 12px 'Roboto', sans-serif;
-    }
-
-    .main-wrapp-card {
-        margin: 0;
-    }
-
-    .main-wrapp-card img {
-        width: 90%;
-        height: auto;
     }
 
     .our-explain-wrapper {
@@ -682,6 +683,21 @@
 
     .thalby-interviews-container h2{
         font: 700 22px 'Roboto', sans-serif;
+    }
+
+    @media screen and (max-width: 375px) {
+
+        .circles-container .circle{
+            width: 120px;
+        }
+
+        .circles-container .circle p {
+            font: 400 16px 'Roboto', sans-serif;
+        }
+
+        .thalby-interviews-container h2{
+            font: 700 18px 'Roboto', sans-serif;
+        }
     }
 
 

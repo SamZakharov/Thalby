@@ -14,8 +14,7 @@ menuBtn.addEventListener('click', () => {
 
 })
 
-
-
+var body = document.querySelector('body');
 menuBtn.addEventListener('click', () => {
     body.classList.toggle('body-hiden');})
 

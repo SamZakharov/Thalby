@@ -15,7 +15,6 @@ $main-font: 'Roboto', sans-serif;
 $font-size-700: 700;
 $font-size-400: 400;
 
-
 * {
   padding: 0;
   margin: 0;
@@ -42,12 +41,11 @@ $font-size-400: 400;
   margin: auto;
 }
 
-.body-hiden{
+.body-hiden {
   overflow: hidden;
 }
 
 header {
-  background-color: $timber-wolf-color;
   padding: 8px 0;
 
   .container {
@@ -572,41 +570,41 @@ header {
     align-items: center;
     justify-items: center;
 
-      img {
+    img {
 
-        width: 288px;
-        height: 351px;
-        display: block;
+      width: 288px;
+      height: 351px;
+      display: block;
 
-      }
-    }
-
-    p {
-      color: $black-color;
-      text-align: center;
-      font: $font-size-400 19px $main-font;
-      font-style: normal;
-      line-height: normal;
-
-      &:nth-child(2) {
-        color: $black-color;
-        text-align: center;
-        font: $font-size-700 24px $main-font;
-        font-style: normal;
-        line-height: normal;
-        letter-spacing: 0.6px;
-      }
-    }
-
-    a {
-      color: $black-color;
-      text-align: center;
-      font: $font-size-700 18px $main-font;
-      font-style: normal;
-      line-height: normal;
-      text-decoration-line: underline;
     }
   }
+
+  p {
+    color: $black-color;
+    text-align: center;
+    font: $font-size-400 19px $main-font;
+    font-style: normal;
+    line-height: normal;
+
+    &:nth-child(2) {
+      color: $black-color;
+      text-align: center;
+      font: $font-size-700 24px $main-font;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 0.6px;
+    }
+  }
+
+  a {
+    color: $black-color;
+    text-align: center;
+    font: $font-size-700 18px $main-font;
+    font-style: normal;
+    line-height: normal;
+    text-decoration-line: underline;
+  }
+}
 
 
 .keep-in-touch-wrapper {
